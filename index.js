@@ -11,4 +11,5 @@ client.on('message', message => {
 });
 
 // 봇과 서버를 연결해주는 부분
-client.login('MTA4NTUyODA0NjgyMTQ0MTYyNg.Grfmna.5e7coYeeIrHDBpSVuzPH-gAwaDTnBKV-L7PnaE');
+client.login('토큰 여따 복붙');
+//미완성코드

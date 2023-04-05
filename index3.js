@@ -13,4 +13,5 @@ client.on('interactionCreate', async interaction => {
   }
 });
 
-client.login('MTA4NTUyODA0NjgyMTQ0MTYyNg.G6eTmB.JvQdCedi_3Ul3mF8wmKcITMFDfi3AIPa2EVdOs');
+client.login('토큰 여따 복붙');
+//미완성코드

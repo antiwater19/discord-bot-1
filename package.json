@@ -18,7 +18,7 @@
     "nodemon": "^2.0.21"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node index2.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --watch \"./src/**/*.ts\" --exec \"npm start\""
   },
