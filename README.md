@@ -2,7 +2,7 @@
 동기: 대학교 과제 + 전에 호기심에 만들고 있던거
 
 
-개발기간: 2023.04.24 - - - 2023.05.13
+개발기간: 2023.04.24 - 2023.05.13
 
 개발환경: <img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=#007ACC">, discord-developer-portal, <img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=#5865F2">
 
