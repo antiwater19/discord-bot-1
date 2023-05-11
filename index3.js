@@ -1,17 +1,19 @@
-const { Client, GatewayIntentBits } = require('discord.js');
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+import { Client, GatewayIntentBits } from "discord.js";
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+// 클라이언트 만들기
+const client = new Client({
+	intents: [
+		GatewayIntentBits.Guilds, //for guild
+		GatewayIntentBits.GuildMembers, //for guild members
+		GatewayIntentBits.GuildMessages, //for guild messages
+		GatewayIntentBits.MessageContent, //for access 
+	],
 });
 
-client.on('interactionCreate', async interaction => {
-  if (!interaction.isChatInputCommand()) return;
-
-  if (interaction.commandName === 'ping') {
-    await interaction.reply('Pong!');
-  }
+//봇이 작동하고있는지 터미널로 문자 보내주는거
+client.on("봇준비", () => {
+	console.log(`> ${client.user.username}`);
 });
 
-client.login('토큰 여따 복붙');
-//미완성코드
+// now login in bot
+client.login('MTA4NTUyODA0NjgyMTQ0MTYyNg.Ghj_EU.KMeQHH6jqy9vTqfDyPyaJuqbZ4UcmRtDjGFw40');
