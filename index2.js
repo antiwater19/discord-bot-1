@@ -17,6 +17,11 @@ client.on('messageCreate' , message=>{
   }
 })
 
+client.on('messageCreate' , message=>{
+  if(message.content == "이제 일좀하자"){
+      message.reply("ㅇㅋ")
+  }
+})
 
-client.login("봇토큰올려놓는곳")
+client.login('MTA4NTUyODA0NjgyMTQ0MTYyNg.Gaazh2.u3U6bEfHvujDZu7pWSuQJyJRvlnB5012OvuJfQ')
 //완성코드 (discord.js 13.x.x버전에서만 돌아감 14.x.x버전에선 안돌아감 문법이 다름)

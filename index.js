@@ -1,15 +1,18 @@
-const { Client, GatewayIntentBits } = require('discord.js');	// discord.js 라이브러리 호출
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });	// Client 객체 생성
+require('dotenv').config();
+const { Client, IntentsBitField, } = require('discord.js');
+const { Configuration, OpenAIApi } = require('openai');
 
-// discord 봇이 실행될 때 딱 한 번 실행할 코드를 적는 부분
-client.once('ready', () => {
-	console.log('Ready!');
-});
+const client = new Client({
+	intents: [
+	  IntentsBitField.Flags.Guilds,
+	  // IntentsBitField.Flags.GuildMembers,
+	  IntentsBitField.Flags.GuildMessages,
+	  IntentsBitField.Flags.MessageContent,
+	],
+  });
 
-client.on('message', message => {
-	console.log(message.content);
-});
+client.on('ready', () => {
+	console.log("The bot is online!!")
+})
 
-// 봇과 서버를 연결해주는 부분
-client.login('토큰 여따 복붙');
-//미완성코드
+client.login(process.env.TOKEN);
