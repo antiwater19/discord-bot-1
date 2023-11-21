@@ -1,0 +1,7 @@
+{ 
+  "prefix": "!", 
+  "token": "봇토큰넣는곳" ,
+  "GUILD_ID": "미구현",
+  "CLIENT_ID": "클라이언트ID넣는곳",
+  "APPLICATION_ID": "클라이언트ID넣는곳"
+}
