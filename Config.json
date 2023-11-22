@@ -1,7 +1,8 @@
 { 
   "prefix": "!", 
-  "token": "봇토큰넣는곳" ,
+  "token": "봇토큰" ,
   "GUILD_ID": "미구현",
-  "CLIENT_ID": "클라이언트ID넣는곳",
-  "APPLICATION_ID": "클라이언트ID넣는곳"
+  "CLIENT_ID": "클라아이디",
+  "APPLICATION_ID": "클라이언트ID넣는곳",
+  "GOD": "오늘 나의 픽 적는곳"
 }
