@@ -73,6 +73,7 @@ client.on('interactionCreate', async interaction => {
     */
   } else if (interaction.commandName === 'today'){
     interaction.reply(`오늘의 민수 pick: ${Conco.GOD}`);
+    const modal=new ModalBuilder();
   }
 });
 
