@@ -34,19 +34,19 @@ client.on('interactionCreate', async interaction => {
     interaction.reply('Pong!');
 
   } else if(interaction.commandName === 'ㅇㅇ'){
-    interaction.reply('이제 없음ㅋ');
-   /*
+    interaction.reply('뭐 찾어 또?');
+   
     //텍스트 입력 구성 요소 만들기
     const modal=new ModalBuilder()
-    .setCustomId('bus VehId')
-    .setTitle('내버스 위치찾기');
+    .setCustomId('Input_data')
+    .setTitle('뭐 입력하는 곳');
 
     const ChasingBus = new TextInputBuilder()
-    .setMaxLength(1000)
-    .setCustomId('Bus vehId')
+    .setMaxLength(1000) // 글자 최대길이가 1000이 최대라는 뜻임
+    .setCustomId('Input_data')
     //레이블은 이 입력에 대해 사용자에게 표시되는 프롬프트입니다.
-    .setLabel("What's your Bus vehId")
-    .setPlaceholder('차량 VehId를 입력해줘~')
+    .setLabel("Input your data")
+    .setPlaceholder('뭐 입력하고 싶은거 있나?')
     //짧다는 것은 한 줄의 텍스트만 의미합니다.
     .setRequired(true)
     .setStyle(TextInputStyle.Short);
@@ -55,7 +55,7 @@ client.on('interactionCreate', async interaction => {
     const firstActionRow = new ActionRowBuilder().addComponents(ChasingBus);
     modal.addComponents(firstActionRow);
     await interaction.showModal(modal);
-
+    //요거 밑에 더 수정해야함 ㅇㅇ;;
     try{
       client.on(Events.InteractionCreate, interaction => {
         if (!interaction.isModalSubmit()) return;
@@ -70,10 +70,9 @@ client.on('interactionCreate', async interaction => {
     } catch{
       interaction.reply('정상적으로 실행되지 않았습니다. 다시 시도해보세요.')
     }
-    */
+
   } else if (interaction.commandName === 'today'){
     interaction.reply(`오늘의 민수 pick: ${Conco.GOD}`);
-    const modal=new ModalBuilder();
   }
 });
 
