@@ -1,8 +1,8 @@
 { 
   "prefix": "!", 
-  "token": "봇토큰" ,
+  "token": "" ,
   "GUILD_ID": "미구현",
-  "CLIENT_ID": "클라아이디",
+  "CLIENT_ID": "",
   "APPLICATION_ID": "클라이언트ID넣는곳",
-  "GOD": "오늘 나의 픽 적는곳"
+  "GOD": "죽인만큼 낳아라 애를"
 }

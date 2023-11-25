@@ -41,7 +41,7 @@ client.on('interactionCreate', async interaction => {
     .setCustomId('Input_data')
     .setTitle('뭐 입력하는 곳');
 
-    const ChasingBus = new TextInputBuilder()
+    const InputBox = new TextInputBuilder()
     .setMaxLength(1000) // 글자 최대길이가 1000이 최대라는 뜻임
     .setCustomId('Input_data')
     //레이블은 이 입력에 대해 사용자에게 표시되는 프롬프트입니다.

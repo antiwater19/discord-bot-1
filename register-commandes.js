@@ -11,6 +11,10 @@ const commands = [
         name: 'today',
         description: '오늘의 민수 픽',
     },
+    {
+        name: 'ㅇㅇ',
+        description: '입력한거 반환 받기',
+    },
 ];
 
 const rest = new REST({ version: '10'}).setToken(Conco.token);
