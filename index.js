@@ -68,7 +68,7 @@ client.on('interactionCreate', async interaction => {
         interaction.reply('정상적으로 실행되었습니다. 등록하신차량 번호는'+ VEHID +"입니다.");
       });
     } catch{
-      interaction.reply('정상적으로 실행되지 않았습니다. 다시 시도해보세요.')
+      interaction.reply('정상적으로 실행되지 않았습니다. 다시 시도해보세요.');
     }
 
   } else if (interaction.commandName === 'today'){
@@ -82,7 +82,7 @@ client.on('messageCreate', (message) =>{
   console.log(message.content);
   if(message.content === "오우야"){
     try{
-      message.reply('오우야~')
+      message.reply('오우야~');
       } catch{
       message.reply('ㅗㅜㅑ');
     }
