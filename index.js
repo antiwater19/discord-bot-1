@@ -20,7 +20,7 @@ client.on('ready', (c) => {
   console.log(`Logged in as ${c.user.tag}!`);
 });
 
-var VEHID; // 버스 VehId를 받을 문자열 전역 변수
+var VEHID; // 입력칸에 입력을 받을 문자열 전역 변수
 
 // 디스코드 봇 명령어 설정
 client.on('interactionCreate', async interaction => {
@@ -28,7 +28,7 @@ client.on('interactionCreate', async interaction => {
 
   console.log(interaction.commandName);
   if(interaction.commandName === 'hey'){
-    interaction.reply('hey!');
+    interaction.reply('나불렀니?!');
 
   } else if(interaction.commandName === 'ping'){
     interaction.reply('Pong!');
@@ -52,7 +52,7 @@ client.on('interactionCreate', async interaction => {
     .setStyle(TextInputStyle.Short);
     
 
-    const firstActionRow = new ActionRowBuilder().addComponents(ChasingBus);
+    const firstActionRow = new ActionRowBuilder().addComponents(Input_data);
     modal.addComponents(firstActionRow);
     await interaction.showModal(modal);
     //요거 밑에 더 수정해야함 ㅇㅇ;;
@@ -86,6 +86,9 @@ client.on('messageCreate', (message) =>{
       } catch{
       message.reply('ㅗㅜㅑ');
     }
+  }
+  if(message.content === "안녕?"){
+    message.reply('안녕? >ㅅ<');
   }
 });
 
