@@ -8,7 +8,7 @@
 
 개발이유:나만의 디스코드 봇을 만들어보고 싶어서
 
-
+``개발에 추가할 기능 고민중 일단 시험기간이라 고민중``
 
 
 사용된 라이브러리 discord.js, <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=#CB3837">(요거는 페키지 관리자), <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
