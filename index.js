@@ -35,7 +35,7 @@ client.on('interactionCreate', async interaction => {
 
   } else if(interaction.commandName === 'ㅇㅇ'){
     interaction.reply('뭐 찾어 또?');
-   
+    //2023-12-16 여기 수정할것
     //텍스트 입력 구성 요소 만들기
     const modal=new ModalBuilder()
     .setCustomId('Input_data')
