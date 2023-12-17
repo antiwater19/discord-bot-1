@@ -65,7 +65,7 @@ client.on('interactionCreate', async interaction => {
         VEHID = busVehId;
         console.log(VEHID); //전역변수인 VEHID에 차량 ID를 입력받는다.
 
-        interaction.reply('정상적으로 실행되었습니다. 등록하신차량 번호는'+ VEHID +"입니다.");
+        interaction.reply(`정상적으로 실행되었습니다. 등록하신 정보는  ${VEHID}입니다`);
       });
     } catch{
       interaction.reply('정상적으로 실행되지 않았습니다. 다시 시도해보세요.');
