@@ -12,7 +12,7 @@ const commands = [
         description: '오늘의 민수 픽',
     },
     {
-        name: 'ㅇㅇ',
+        name: 'input',
         description: '입력한거 반환 받기',
     },
 ];
