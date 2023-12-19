@@ -15,6 +15,10 @@ const commands = [
         name: 'input',
         description: '입력한거 반환 받기',
     },
+    {
+        name: 'game1',
+        description: '가위 바위 보 게임',
+    },
 ];
 
 const rest = new REST({ version: '10'}).setToken(Conco.token);
@@ -25,6 +29,7 @@ const rest = new REST({ version: '10'}).setToken(Conco.token);
 
         await rest.put(
             //특정 채팅채널에서 커맨드를 사용할수 있게 해주는 함수(클라이언트ID, 채팅채널ID)
+            //아직 미개발
             /*
             Routes.applicationGuildCommands(
                 Conco.CLIENT_ID,
