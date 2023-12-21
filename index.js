@@ -83,7 +83,7 @@ client.on('interactionCreate', async interaction => {
       .setMaxLength(1000) // 글자 최대길이가 1000이 최대라는 뜻임
       .setCustomId('your_turn')
       .setLabel("Input your data")
-      .setPlaceholder('가위바위보')
+      .setPlaceholder('가위(1), 바위(2), 보(3)')
       .setRequired(true)
       .setStyle(TextInputStyle.Short);
     
@@ -97,25 +97,28 @@ client.on('interactionCreate', async interaction => {
         if (!interaction.isModalSubmit()) return;
         
         // Get the data entered by the user
-        const MyTurn = interaction.fields.getTextInputValue('your_turn');
-        console.log(MyTurn); 
+        const Player = interaction.fields.getTextInputValue('your_turn');
+        console.log(Player);
 
         //봇이 내는 랜덤가위바위보 만들기.
-        const randombot = Math.floor(Math.random()*(3-1)+1);
+        const RandomBot = Math.floor(Math.random()*(3-1)+1);
+
         //1부터 3까지 랜덤 변수를 만든다.
-        switch(randombot){
+        /*switch(randombot){
           case 1:
-            interaction.reply(`나는 주먹!`);
+            interaction.reply(`나는 가위! 너는 ${Player}`);
             break;
           case 2:
-            interaction.reply('나는 보!');
+            interaction.reply(`나는 바위! 너는 ${Player}`);
             break;
           case 3:
-            interaction.reply('나는 가위!');
+            interaction.reply(`나는 보! 너는 ${Player}`);
             break;
+        }*/
+        if(RandomBot === Player){
+          
         }
 
-        interaction.reply(`너는 [${MyTurn}]을 냈어!`);
       });
     } catch{
       interaction.reply('앗차 미안 내가 못봤는데... 다시 해줄레??ㅠㅠ')
