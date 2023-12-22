@@ -115,8 +115,14 @@ client.on('interactionCreate', async interaction => {
             interaction.reply(`나는 보! 너는 ${Player}`);
             break;
         }*/
-        if(RandomBot === Player){
-          
+
+        // 엄격하게 같다 (변수타입까지고려)'===', 그냥 같다. '=='
+        if(RandomBot == Player){
+          interaction.reply(`무승부!`);
+        } else if((RandomBot == 1 && Player == 2)||(RandomBot == 2 && Player == 3)||(RandomBot == 3 && Player == 1)){
+          interaction.reply(`You are Winner!`);
+        } else if((RandomBot == 1 && Player == 3)||(RandomBot == 2 && Player == 1)||(RandomBot == 3 && Player == 2)){
+          interaction.reply(`You are Loserㅋㅋ`);
         }
 
       });
