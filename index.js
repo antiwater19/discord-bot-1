@@ -100,7 +100,7 @@ client.on('interactionCreate', async interaction => {
         const Player = interaction.fields.getTextInputValue('your_turn');
         console.log(Player);
 
-        //봇이 내는 랜덤가위바위보 만들기.
+        //봇이 내는 랜덤가위바위보 만들기.1~3까지 랜덤 뽑기
         const RandomBot = Math.floor(Math.random()*(3-1)+1);
 
         //1부터 3까지 랜덤 변수를 만든다.
@@ -150,5 +150,5 @@ client.on('messageCreate', (message) =>{
 });
 
  
-
+// nodemon 사용법 npm run dev
 client.login(Conco.token);
