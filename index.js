@@ -116,7 +116,7 @@ client.on('interactionCreate', async interaction => {
             break;
         }*/
 
-        // 엄격하게 같다 (변수타입까지고려)'===', 그냥 같다. '=='
+        // 엄격하게 같다 (변수타입까지고려)'===', 그냥 같다. '==' 
         if(RandomBot == Player){
           interaction.reply(`무승부!`);
         } else if((RandomBot == 1 && Player == 2)||(RandomBot == 2 && Player == 3)||(RandomBot == 3 && Player == 1)){
@@ -129,6 +129,7 @@ client.on('interactionCreate', async interaction => {
     } catch{
       interaction.reply('앗차 미안 내가 못봤는데... 다시 해줄레??ㅠㅠ')
     }
+    // 게임2 넣기
   }
   
 });
