@@ -148,6 +148,9 @@ client.on('messageCreate', (message) =>{
   if(message.content === "안녕?"){
     message.reply('안녕? >ㅅ<');
   }
+  if(message.content === "거시기네"){
+    message.reply('거시기야..');
+  }
 });
 
  
