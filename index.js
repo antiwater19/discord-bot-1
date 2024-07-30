@@ -2,8 +2,9 @@ const express = require("express");
 // const app = express();
 // const cors = require("cors");
 // app.use(cors()); 
-const Conco = require('./Config.json');
-// const { token } = require('./config.json');
+// 이런식으로도 json파일을 변수명으로 (마치 C언어 구조체처럼)해서 안에 있는 변수들을 불러올 수 있다.
+//const Conco = require('./Config.json');
+const { token } = require('./config.json');
 
 // Require the necessary discord.js classes
 // 요구되는 필요한 discord.js 클래스들 이다. java나 C++의 클래스랑 같은 개념이다.
@@ -25,7 +26,7 @@ client.once(Events.ClientReady, readyClient => {
 
 // Log in to Discord with your client's token
 // 클라이언트 토큰으로 디스코드 로그인 시키기
-client.login(Conco.token);
-
+//client.login(Conco.token);
+client.login(token);
 // ㅇㅇ
 // nodemon 사용법 npm run dev
