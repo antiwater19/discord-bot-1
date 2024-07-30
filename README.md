@@ -9,4 +9,8 @@
 
 사용된 라이브러리 discord.js, <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=#CB3837">(요거는 페키지 관리자), <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
 
+<<<<<<< HEAD
+*위에 예시를 이용할시 index.js를 사용해주면 된다.*
+=======
 *위에 예시를 이용할시 newindex.js를 사용해주면 된다.*
+>>>>>>> 879d046502f193f6b231cc4ffc5cffec0402d941

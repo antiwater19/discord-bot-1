@@ -1,4 +1,4 @@
-const Conco = require('./Config.json');
+const Conco = require('./옛날꺼2.json');
 const { REST, Routes } = require('discord.js');
 
 // 명령어 목록 json
@@ -21,10 +21,10 @@ const commands = [
     },
 ];
 
-const rest = new REST({ version: '10'}).setToken(Conco.token);
+const rest = new REST({ version: '10' }).setToken(Conco.token);
 
-(async()=>{
-    try{
+(async () => {
+    try {
         console.log('Registering slash commands...');
 
         await rest.put(
@@ -41,7 +41,7 @@ const rest = new REST({ version: '10'}).setToken(Conco.token);
         );
 
         console.log('Slash commands were registered successfully!');
-    }   catch (error){ // await가 실행이 안될 시 
+    } catch (error) { // await가 실행이 안될 시 
         console.log(`There was an error: ${error}`);
     }
 })();

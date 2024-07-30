@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+{
+    "clientId": "1257936963730935818",
+    "guildId": "너 채팅채널 아이디 넣으삼",
+    "token": "MTI1NzkzNjk2MzczMDkzNTgxOA.Gg66j3.PiU5srPKuY9QgGT6euvhHxHqMX4x3IHV5k_mOw"
+=======
 { 
   "prefix": "!", 
   "token": "님들 봇토큰 여기다 복붙하삼",
@@ -5,4 +11,5 @@
   "CLIENT_ID": "님들 봇 애플리케이션 아이디",
   "APPLICATION_ID": "님들 봇 애플리케이션 아이디",
   "GOD": "테스트용"
+>>>>>>> 879d046502f193f6b231cc4ffc5cffec0402d941
 }
